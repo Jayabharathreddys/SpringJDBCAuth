@@ -19,9 +19,11 @@ public class AppSecurityConfiguration {
     private static final String ADMIN = "ADMIN";
     private static final String USER = "USER";
 
+    @Autowired
     private final DataSource dataSource;
 
-    public SecurityConfiguration(DataSource dataSource) {
+
+    public AppSecurityConfiguration(DataSource dataSource) {
         this.dataSource = dataSource;
     }
 
